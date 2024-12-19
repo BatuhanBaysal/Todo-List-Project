@@ -1,70 +1,105 @@
-# Getting Started with Create React App
+# To-Do List Project 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Frontend Development with React.js, CSS, HTML  
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+### Proje Hakkında (Overview)  
 
-### `npm start`
+Bu proje, günlük görevlerin yönetimini kolaylaştırmak için oluşturulmuş bir **To-Do List** uygulamasıdır. Kullanıcıların görev eklemesine, silmesine ve görevlerin atanma durumunu takip etmesine olanak sağlar.  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Kullanılan Teknolojiler**:  
+- Framework: React.js  
+- Stil Tasarımı: CSS  
+- Yapı ve İşlevsellik: HTML, JavaScript  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Kullanılan Araçlar**:  
+- Kod Düzenleyici: Visual Studio Code  
+- Paket Yönetimi: npm  
 
-### `npm test`
+**Temel Özellikler**:  
+- Görev ekleme ve silme özellikleri.  
+- Atanan kişilere göre görev takibi.  
+- Görev listesinin kullanıcı dostu bir arayüzde gösterimi.  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+### Teknik Bilgiler (Technical Details)  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Proje Yapısı ve Kullanılan Yaklaşımlar**:  
+- React bileşen tabanlı yapı kullanılarak modüler ve sürdürülebilir bir geliştirme sağlandı.  
+- `useState` hook ile durum yönetimi gerçekleştirildi.  
+- Fonksiyonel bileşenler ve prop geçişleriyle veri paylaşımı sağlandı.  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Proje Yapısı**:  
+- `App.js`: Uygulamanın ana dosyası, görevlerin genel yönetimini sağlar.  
+- `TodoTable.js`: Tüm görevlerin tablo olarak gösterildiği bileşen.  
+- `NewTodoForm.js`: Yeni görev ekleme formunu içerir.  
+- `TodoRowItem.js`: Tek bir görev satırını temsil eden bileşen.  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+**Kurulum (Setup)**: 
+```bash
+npx create-react-app todo-list
+cd todo-list
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Projeyi Çalıştırma (Run): `npm start`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Kullanım (Usage)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **Görev Ekleme**:
+- "New Todo" butonuna tıklayın.
+- Görevin açıklamasını ve atanacak kişiyi girin.
+- "Add Todo" butonuna tıklayarak görevi ekleyin.
 
-## Learn More
+- **Görev Silme**:
+- Görev tablosundan bir satıra tıklayarak görevi silin.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Öne Çıkan Özellikler (Key Features)
 
-### Code Splitting
+- React.js ile yeniden kullanılabilir bileşenler.
+- Kullanıcı dostu ve modern bir arayüz tasarımı.
+- Gerçek zamanlı durum yönetimi ve veri işleme.
+- Hafif ve optimize edilmiş frontend uygulaması.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+### Demo ve Ekran Görüntüleri (Demo & Screenshots)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Proje, npm start komutuyla yerel bir sunucuda çalıştırılabilir.
 
-### Making a Progressive Web App
+- To-do List Genel Görünümü:
+![To-do-List Screenshot](./images/To-do-List.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- To-do List Yeni görev yaratma:
+![To-do-List Screenshot](./images/To-do-List-Create.png)
 
-### Advanced Configuration
+- To-do List Yeni görev yarattıktan sonra:
+![To-do-List Screenshot](./images/To-do-List-After-Create.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- To-do List görev silme(görevin üstüne tıklanınca siliniyor):
+![To-do-List Screenshot](./images/To-do-List-Delete.png)
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Katkıda Bulunanlar ve Kaynaklar (Contributors & Resources)
 
-### `npm run build` fails to minify
+**Proje Sahibi**: [Batuhan Baysal](https://www.linkedin.com/in/batuhanbaysal/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Kaynaklar**:
+- React.js Resmi Dokümantasyonu
+- JavaScript ve CSS Kaynakları
+
+---
+
+### İletişim ve Destek (Contact & Support)
+
+- **LinkedIn**: [Batuhan Baysal](https://www.linkedin.com/in/batuhanbaysal/)
+
+- **GitHub**: [Batuhan Baysal](https://github.com/BatuhanBaysal)
